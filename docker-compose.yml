@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  acore-quick-reg:
+    image: evilgenius13/acore-mini-store:latest
+    container_name: acore-store
+    ports:
+      - "3032:3000"
+    environment:
+      - SOAP_IP=127.0.0.1
+      - SOAP_PORT=7878
+      - SOAP_USER=admin
+      - SOAP_PASSWORD=password
