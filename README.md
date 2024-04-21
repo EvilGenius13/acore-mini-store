@@ -22,3 +22,9 @@ A character with GM level 3 or higher is required to send items to other charact
 ```
 - run `docker-compose up -d` to start the server
 - Open http://localhost:3032
+
+## Local or Remote Database
+- If your database is remote, use the public IP address of the server.
+- If your database is local and not in a docker container, use the local IP address of the server.
+- If your database is local and in a docker container:
+    - Use the container name of the database container and uncomment the networks line(s) in the docker-compose.yml file.
